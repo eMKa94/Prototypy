@@ -1,0 +1,346 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title "AFE do pomiaru prądu i napięcia w 3 - fazowym układzie nn"
+Date "2020-11-06"
+Rev ""
+Comp "Zenex sp. z o. o."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2500 3700 1550 500 
+U 5FA4541C
+F0 "ac_i_afe_1" 50
+F1 "ac_i_afe.sch" 50
+F2 "ext_ref" I R 4050 3900 50 
+F3 "VDDA" I R 4050 3800 50 
+F4 "OUT_SIG" I R 4050 4000 50 
+F5 "GNDA" I R 4050 4100 50 
+$EndSheet
+$Sheet
+S 2500 1600 1550 500 
+U 5FA45669
+F0 "ac_v_afe_1" 50
+F1 "ac_v_afe.sch" 50
+F2 "ext_ref" I R 4050 1800 50 
+F3 "VDDA" I R 4050 1700 50 
+F4 "OUT_SIG" I R 4050 1900 50 
+F5 "GNDA" I R 4050 2000 50 
+F6 "AC_V_L" I L 2500 1700 50 
+F7 "AC_V_N" I L 2500 2000 50 
+$EndSheet
+$Sheet
+S 2500 2300 1550 500 
+U 5FA5E85E
+F0 "ac_v_afe_2" 50
+F1 "ac_v_afe.sch" 50
+F2 "ext_ref" I R 4050 2500 50 
+F3 "VDDA" I R 4050 2400 50 
+F4 "OUT_SIG" I R 4050 2600 50 
+F5 "GNDA" I R 4050 2700 50 
+F6 "AC_V_L" I L 2500 2400 50 
+F7 "AC_V_N" I L 2500 2700 50 
+$EndSheet
+$Sheet
+S 2500 3000 1550 500 
+U 5FA5EA5F
+F0 "ac_v_afe_3" 50
+F1 "ac_v_afe.sch" 50
+F2 "ext_ref" I R 4050 3200 50 
+F3 "VDDA" I R 4050 3100 50 
+F4 "OUT_SIG" I R 4050 3300 50 
+F5 "GNDA" I R 4050 3400 50 
+F6 "AC_V_L" I L 2500 3100 50 
+F7 "AC_V_N" I L 2500 3400 50 
+$EndSheet
+$Sheet
+S 2500 4400 1550 500 
+U 5FA5F52E
+F0 "ac_i_afe_2" 50
+F1 "ac_i_afe.sch" 50
+F2 "ext_ref" I R 4050 4600 50 
+F3 "VDDA" I R 4050 4500 50 
+F4 "OUT_SIG" I R 4050 4700 50 
+F5 "GNDA" I R 4050 4800 50 
+$EndSheet
+$Sheet
+S 2500 5100 1550 500 
+U 5FA5F6C5
+F0 "ac_i_afe_3" 50
+F1 "ac_i_afe.sch" 50
+F2 "ext_ref" I R 4050 5300 50 
+F3 "VDDA" I R 4050 5200 50 
+F4 "OUT_SIG" I R 4050 5400 50 
+F5 "GNDA" I R 4050 5500 50 
+$EndSheet
+$Sheet
+S 2500 5800 1550 500 
+U 5FA5FFA2
+F0 "ac_i_afe_4" 50
+F1 "ac_i_afe.sch" 50
+F2 "ext_ref" I R 4050 6000 50 
+F3 "VDDA" I R 4050 5900 50 
+F4 "OUT_SIG" I R 4050 6100 50 
+F5 "GNDA" I R 4050 6200 50 
+$EndSheet
+Text Label 4450 4000 2    50   ~ 0
+signal_I1
+Text Label 4450 4700 2    50   ~ 0
+signal_I2
+Text Label 4450 5400 2    50   ~ 0
+signal_I3
+Text Label 4450 6100 2    50   ~ 0
+signal_IN
+Wire Wire Line
+	4450 4000 4050 4000
+Wire Wire Line
+	4050 4700 4450 4700
+Wire Wire Line
+	4050 5400 4450 5400
+Wire Wire Line
+	4450 6100 4050 6100
+$Comp
+L power:GNDA #PWR08
+U 1 1 5FA6319F
+P 4350 4100
+F 0 "#PWR08" H 4350 3850 50  0001 C CNN
+F 1 "GNDA" V 4355 3972 50  0000 R CNN
+F 2 "" H 4350 4100 50  0001 C CNN
+F 3 "" H 4350 4100 50  0001 C CNN
+	1    4350 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 4100 4050 4100
+$Comp
+L power:GNDA #PWR010
+U 1 1 5FA63B77
+P 4350 4800
+F 0 "#PWR010" H 4350 4550 50  0001 C CNN
+F 1 "GNDA" V 4355 4672 50  0000 R CNN
+F 2 "" H 4350 4800 50  0001 C CNN
+F 3 "" H 4350 4800 50  0001 C CNN
+	1    4350 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 4800 4050 4800
+$Comp
+L power:GNDA #PWR012
+U 1 1 5FA63F06
+P 4350 5500
+F 0 "#PWR012" H 4350 5250 50  0001 C CNN
+F 1 "GNDA" V 4355 5372 50  0000 R CNN
+F 2 "" H 4350 5500 50  0001 C CNN
+F 3 "" H 4350 5500 50  0001 C CNN
+	1    4350 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 5500 4050 5500
+$Comp
+L power:GNDA #PWR014
+U 1 1 5FA64241
+P 4350 6200
+F 0 "#PWR014" H 4350 5950 50  0001 C CNN
+F 1 "GNDA" V 4355 6072 50  0000 R CNN
+F 2 "" H 4350 6200 50  0001 C CNN
+F 3 "" H 4350 6200 50  0001 C CNN
+	1    4350 6200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 6200 4050 6200
+$Comp
+L power:GNDA #PWR02
+U 1 1 5FA64611
+P 4350 2000
+F 0 "#PWR02" H 4350 1750 50  0001 C CNN
+F 1 "GNDA" V 4355 1872 50  0000 R CNN
+F 2 "" H 4350 2000 50  0001 C CNN
+F 3 "" H 4350 2000 50  0001 C CNN
+	1    4350 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 2000 4050 2000
+$Comp
+L power:GNDA #PWR04
+U 1 1 5FA649DD
+P 4350 2700
+F 0 "#PWR04" H 4350 2450 50  0001 C CNN
+F 1 "GNDA" V 4355 2572 50  0000 R CNN
+F 2 "" H 4350 2700 50  0001 C CNN
+F 3 "" H 4350 2700 50  0001 C CNN
+	1    4350 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 2700 4050 2700
+$Comp
+L power:GNDA #PWR06
+U 1 1 5FA64DF4
+P 4350 3400
+F 0 "#PWR06" H 4350 3150 50  0001 C CNN
+F 1 "GNDA" V 4355 3272 50  0000 R CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 3400 4050 3400
+$Comp
+L power:VDDA #PWR07
+U 1 1 5FA64FA9
+P 4350 3800
+F 0 "#PWR07" H 4350 3650 50  0001 C CNN
+F 1 "VDDA" V 4365 3928 50  0000 L CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 3800 4050 3800
+$Comp
+L power:VDDA #PWR09
+U 1 1 5FA65C9C
+P 4350 4500
+F 0 "#PWR09" H 4350 4350 50  0001 C CNN
+F 1 "VDDA" V 4365 4628 50  0000 L CNN
+F 2 "" H 4350 4500 50  0001 C CNN
+F 3 "" H 4350 4500 50  0001 C CNN
+	1    4350 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 4500 4050 4500
+$Comp
+L power:VDDA #PWR011
+U 1 1 5FA661FB
+P 4350 5200
+F 0 "#PWR011" H 4350 5050 50  0001 C CNN
+F 1 "VDDA" V 4365 5328 50  0000 L CNN
+F 2 "" H 4350 5200 50  0001 C CNN
+F 3 "" H 4350 5200 50  0001 C CNN
+	1    4350 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 5200 4050 5200
+$Comp
+L power:VDDA #PWR013
+U 1 1 5FA667B8
+P 4350 5900
+F 0 "#PWR013" H 4350 5750 50  0001 C CNN
+F 1 "VDDA" V 4365 6028 50  0000 L CNN
+F 2 "" H 4350 5900 50  0001 C CNN
+F 3 "" H 4350 5900 50  0001 C CNN
+	1    4350 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 5900 4050 5900
+$Comp
+L power:VDDA #PWR01
+U 1 1 5FA67001
+P 4350 1700
+F 0 "#PWR01" H 4350 1550 50  0001 C CNN
+F 1 "VDDA" V 4365 1828 50  0000 L CNN
+F 2 "" H 4350 1700 50  0001 C CNN
+F 3 "" H 4350 1700 50  0001 C CNN
+	1    4350 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 1700 4050 1700
+$Comp
+L power:VDDA #PWR03
+U 1 1 5FA67438
+P 4350 2400
+F 0 "#PWR03" H 4350 2250 50  0001 C CNN
+F 1 "VDDA" V 4365 2528 50  0000 L CNN
+F 2 "" H 4350 2400 50  0001 C CNN
+F 3 "" H 4350 2400 50  0001 C CNN
+	1    4350 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 2400 4050 2400
+$Comp
+L power:VDDA #PWR05
+U 1 1 5FA67911
+P 4350 3100
+F 0 "#PWR05" H 4350 2950 50  0001 C CNN
+F 1 "VDDA" V 4365 3228 50  0000 L CNN
+F 2 "" H 4350 3100 50  0001 C CNN
+F 3 "" H 4350 3100 50  0001 C CNN
+	1    4350 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 3100 4050 3100
+Text Label 4450 1900 2    50   ~ 0
+signal_U1
+Wire Wire Line
+	4450 1900 4050 1900
+Text Label 4450 2600 2    50   ~ 0
+signal_U2
+Wire Wire Line
+	4450 2600 4050 2600
+Text Label 4450 3300 2    50   ~ 0
+signal_U3
+Wire Wire Line
+	4450 3300 4050 3300
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FA77342
+P 7800 3000
+F 0 "H1" H 7900 3046 50  0000 L CNN
+F 1 "MountingHole" H 7900 2955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7800 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FA77CAF
+P 7800 3200
+F 0 "H2" H 7900 3246 50  0000 L CNN
+F 1 "MountingHole" H 7900 3155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7800 3200 50  0001 C CNN
+F 3 "~" H 7800 3200 50  0001 C CNN
+	1    7800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FA77F99
+P 7800 3400
+F 0 "H3" H 7900 3446 50  0000 L CNN
+F 1 "MountingHole" H 7900 3355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7800 3400 50  0001 C CNN
+F 3 "~" H 7800 3400 50  0001 C CNN
+	1    7800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FA78296
+P 7800 3600
+F 0 "H4" H 7900 3646 50  0000 L CNN
+F 1 "MountingHole" H 7900 3555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7800 3600 50  0001 C CNN
+F 3 "~" H 7800 3600 50  0001 C CNN
+	1    7800 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
