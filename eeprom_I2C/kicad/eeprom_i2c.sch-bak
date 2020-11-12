@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "eeprom memory"
+Date "2020-11-09"
+Rev ""
+Comp "eMKa elektronika"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3800 4150 4900 4150
+Wire Wire Line
+	3800 4050 4900 4050
+Text Label 4900 4050 2    50   ~ 0
+SCL
+Text Label 4900 4150 2    50   ~ 0
+SDA
+Wire Wire Line
+	3800 4250 4900 4250
+Text Label 4900 4250 2    50   ~ 0
+~WRITE_CONTROL
+Wire Wire Line
+	3400 3150 3400 3550
+Wire Wire Line
+	3400 4450 3400 5050
+Text Label 3400 5050 0    50   ~ 0
+GND
+Wire Wire Line
+	1850 4250 3000 4250
+Wire Wire Line
+	1850 4150 3000 4150
+Wire Wire Line
+	1850 4050 3000 4050
+Text Label 1850 4250 0    50   ~ 0
+E2
+Text Label 1850 4150 0    50   ~ 0
+E1
+Text Label 1850 4050 0    50   ~ 0
+E0
+Text Label 1850 3550 0    50   ~ 0
+GND
+Text Label 3400 3150 0    50   ~ 0
+VDD
+Wire Wire Line
+	1850 3550 2650 3550
+Wire Wire Line
+	3400 3550 3400 3850
+Connection ~ 3400 3550
+Wire Wire Line
+	2950 3550 3400 3550
+$Comp
+L Device:C C1
+U 1 1 5FEE49B8
+P 2800 3550
+F 0 "C1" V 3050 3500 50  0000 L CNN
+F 1 "100n" V 2950 3550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2838 3400 50  0001 C CNN
+F 3 "~" H 2800 3550 50  0001 C CNN
+	1    2800 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_EEPROM:M24C01-FDW U1
+U 1 1 5FDDE389
+P 3400 4150
+F 0 "U1" H 3750 4550 50  0000 C CNN
+F 1 "M24C64-FDW" H 3750 4450 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3400 4500 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/b0/d8/50/40/5a/85/49/6f/DM00071904.pdf/files/DM00071904.pdf/jcr:content/translations/en.DM00071904.pdf" H 3450 3650 50  0001 C CNN
+	1    3400 4150
+	1    0    0    -1  
+$EndComp
+Text Label 7250 3300 0    50   ~ 0
+VDD
+Text Label 7250 3400 0    50   ~ 0
+GND
+Text Label 7250 3600 0    50   ~ 0
+E0
+Text Label 7250 3700 0    50   ~ 0
+E1
+Text Label 7250 3800 0    50   ~ 0
+E2
+Text Label 7250 3950 0    50   ~ 0
+SCL
+Text Label 7250 4050 0    50   ~ 0
+SDA
+Text Label 7250 4150 0    50   ~ 0
+~WRITE_CONTROL
+Text HLabel 8850 3300 2    50   Input ~ 0
+VDD
+Text HLabel 8850 3400 2    50   Input ~ 0
+GND
+Text HLabel 8850 3600 2    50   Input ~ 0
+E0
+Text HLabel 8850 3700 2    50   Input ~ 0
+E1
+Text HLabel 8850 3800 2    50   Input ~ 0
+E0
+Text HLabel 8850 3950 2    50   Input ~ 0
+SCL
+Text HLabel 8850 4050 2    50   Input ~ 0
+SDA
+Text HLabel 8850 4150 2    50   Input ~ 0
+~WRITE_CONTROL
+Wire Wire Line
+	7250 3300 8850 3300
+Wire Wire Line
+	8850 3400 7250 3400
+Wire Wire Line
+	7250 3600 8850 3600
+Wire Wire Line
+	8850 3700 7250 3700
+Wire Wire Line
+	7250 3800 8850 3800
+Wire Wire Line
+	8850 3950 7250 3950
+Wire Wire Line
+	7250 4050 8850 4050
+Wire Wire Line
+	8850 4150 7250 4150
+$EndSCHEMATC
