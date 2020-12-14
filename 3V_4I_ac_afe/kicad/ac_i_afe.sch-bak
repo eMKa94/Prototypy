@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 8
-Title ""
-Date ""
+Title "Analog front end - pomiar prądu AC"
+Date "2020-11-06"
 Rev ""
-Comp ""
+Comp "Zenex sp. z o. o."
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -44,10 +44,6 @@ F 0 "R1" H 4720 4046 50  0000 L CNN
 F 1 "10" H 4720 3955 50  0000 L CNN
 F 2 "Resistor_SMD:R_MELF_MMB-0207" V 4580 4000 50  0001 C CNN
 F 3 "https://www.tme.eu/pl/details/smdmm0207-10r/rezystory-smd-melf-0207/vishay/smm02070c1009fbp00/" H 4650 4000 50  0001 C CNN
-F 4 " SMM02070C1009FBP00" H 4650 4000 50  0001 C CNN "PART_ID"
-F 5 "VISHAY" H 4650 4000 50  0001 C CNN "PRODUCER"
-F 6 "SMDMM0207-10R" H 4650 4000 50  0001 C CNN "PART_ID"
-F 7 "Rezystor: thin film; SMD; 0207 melf; 10Ω; 1W; ±1%; Ø2,2x5,8mm" H 4650 4000 50  0001 C CNN "Description"
 	1    4650 4000
 	1    0    0    1   
 $EndComp
@@ -103,9 +99,6 @@ F 0 "C1" V 5850 3050 50  0000 C CNN
 F 1 "4,7n" V 5950 3050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6138 2900 50  0001 C CNN
 F 3 "https://www.tme.eu/pl/details/06035c472k4z2a/kondensatory-mlcc-smd-0603/avx/" H 6100 3050 50  0001 C CNN
-F 4 "AVX " H 6100 3050 50  0001 C CNN "PRODUCER"
-F 5 "Kondensator: ceramiczny; MLCC; 4,7nF; 50V; X7R; ±10%; SMD; 0603" H 6100 3050 50  0001 C CNN "Description"
-F 6 "06035C472K4Z2A" H 6100 3050 50  0001 C CNN "PART_ID"
 	1    6100 3050
 	0    1    1    0   
 $EndComp
@@ -146,10 +139,6 @@ F 0 "R3" V 5893 3450 50  0000 C CNN
 F 1 "15K" V 5984 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6030 3450 50  0001 C CNN
 F 3 "https://www.tme.eu/pl/details/smd0603-15k-1%25/rezystory-smd-0603/royal-ohm/0603saf1502t5e/" H 6100 3450 50  0001 C CNN
-F 4 " 0603SAF1502T5E" H 6100 3450 50  0001 C CNN "PART_ID"
-F 5 "ROYAL OHM" H 6100 3450 50  0001 C CNN "PRODUCER"
-F 6 "0603SAF1502T5E" H 6100 3450 50  0001 C CNN "PART_ID"
-F 7 "Rezystor: thick film; SMD; 0603; 15kΩ; 0,1W; ±1%; -55÷155°C" H 6100 3450 50  0001 C CNN "Description"
 	1    6100 3450
 	0    1    1    0   
 $EndComp
@@ -187,10 +176,6 @@ F 0 "R2" V 4893 3450 50  0000 C CNN
 F 1 "1K" V 4984 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 3450 50  0001 C CNN
 F 3 "https://www.tme.eu/pl/details/smd0603-1k-1%25/rezystory-smd-0603/royal-ohm/0603saf1001t5e/" H 5100 3450 50  0001 C CNN
-F 4 " 0603SAF1001T5E" H 5100 3450 50  0001 C CNN "PART_ID"
-F 5 "ROYAL OHM" H 5100 3450 50  0001 C CNN "PRODUCER"
-F 6 "0603SAF1001T5E" H 5100 3450 50  0001 C CNN "PART_ID"
-F 7 "Rezystor: thick film; SMD; 0603; 1kΩ; 0,1W; ±1%; -55÷155°C" H 5100 3450 50  0001 C CNN "Description"
 	1    5100 3450
 	0    1    1    0   
 $EndComp
@@ -227,9 +212,6 @@ F 0 "U1" H 6200 4400 50  0000 C CNN
 F 1 "MCP6021T" H 6200 4300 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5800 3950 50  0001 L CNN
 F 3 "https://www.tme.eu/pl/details/mcp6021t-e_ot/wzmacniacze-operacyjne-smd/microchip-technology/" H 5900 4350 50  0001 C CNN
-F 4 "Wzmacniacz operacyjny; 10MHz; 2,5÷5,5V; Kanały: 1; SOT23-5" H 5900 4150 50  0001 C CNN "Description"
-F 5 " MCP6021T-E/OT" H 5900 4150 50  0001 C CNN "PART_ID"
-F 6 "MICROCHIP" H 5900 4150 50  0001 C CNN "PRODUCER"
 	1    5900 4150
 	1    0    0    1   
 $EndComp

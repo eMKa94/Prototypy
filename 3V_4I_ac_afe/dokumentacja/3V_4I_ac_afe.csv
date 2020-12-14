@@ -1,0 +1,21 @@
+Id;Oznaczenie;Obudowa;Ilosc;Oznaczenie;Dostawca i numer artykulu
+1;H4,H3,H2,H1;MountingHole_3.2mm_M3;4;MountingHole;
+2;CT3,CT4,CT2,CT1;CT_talema_pimary_wire;4;Current_Transformer;
+3;J43,J36,J29,J1,J24,J17,J10;TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal;7;screw;
+4;J45,J44,J38,J37,J31,J30,J3,J2;PinHeader_1x01_P2.54mm_Vertical;8;CT_R;
+5;J49,J42,J35,J28,J21,J14,J7;PinHeader_1x02_P2.54mm_Vertical;7;GNDA;
+6;J48,J41,J34,J27,J20,J13,J6;PinHeader_1x02_P2.54mm_Vertical;7;SIGNAL;
+7;J47,J40,J33,J26,J19,J12,J5;PinHeader_1x02_P2.54mm_Vertical;7;VDDA;
+8;J46,J39,J32,J25,J18,J11,J4;PinHeader_1x02_P2.54mm_Vertical;7;V_ref;
+9;U7,U6,U5,U4,U3,U2,U1;SOT-23-5;7;MCP6021T;
+10;R45,R42,R39,R3;R_0603_1608Metric;4;15K;
+11;R44,R41,R38,R2;R_0603_1608Metric;4;1K;
+12;R43,R40,R37,R1;R_MELF_MMB-0207;4;10;
+13;C4,C3,C2,C1;C_0603_1608Metric;4;4,7n;
+14;R36,R25,R14;R_0805_2012Metric;3;R;
+15;R35,R34,R24,R23,R13,R12;R_1206_3216Metric;6;R;
+16;R33,R32,R22,R21,R11,R10;R_0805_2012Metric;6;240K;
+17;R31,R30,R29,R28,R27,R26,R20,R19,R18,R17,R16,R15,R9,R8,R7,R6,R5,R4;R_0805_2012Metric;18;1M;
+18;JP3,JP2,JP1;SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm;3;Jumper_3_Bridged12;
+19;J23,J16,J9;PinHeader_1x01_P2.54mm_Vertical;3;AC N;
+20;J22,J15,J8;PinHeader_1x01_P2.54mm_Vertical;3;AC L;
